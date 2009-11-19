@@ -1,0 +1,27 @@
+<html>
+<body>
+<h1>Crear Mensaje</h1><br>
+<form method="POST" action="/mensajes/nuevo_mensaje/">
+<table>
+<tr>
+<td>
+Para:
+</td>
+<td>
+<input type="text" name="para" value="{{para}}">{{errores_destinatarios}}
+</td>
+</tr>
+<tr>
+<td>
+Mensaje:
+</td>
+<td>
+<textarea name="mensaje" cols="80" rows="20">{{mens}}</textarea>{{errores_mensaje}}
+</td>
+<tr>
+</table>
+<input type="submit" value="Enviar mensaje">
+</form>
+
+</body>
+</html>

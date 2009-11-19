@@ -1,0 +1,18 @@
+<html>
+<body>
+Bienvenido a la Aplicación web de Idrisi + mapserver<br/>
+<form action="login/" method="post">
+<table>
+<tr>
+<td>Nombre de usuario</td>
+<td><input type="text" name="nombre"/></td>
+</tr>
+<td>Password</td>
+<td><input type="password" name="pass"/></td>
+<tr>
+</tr>
+</table>
+<input type="submit" value="loguear"/>
+</form>
+</body>
+</html>

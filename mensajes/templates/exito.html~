@@ -1,0 +1,6 @@
+<html>
+<body>
+El mensaje se ha enviado con éxito
+<a href="/mensajes/crear/">Enviar otro</a>-<a href="/mensajes/">Volver a la lista de mensajes</a>-<a href="/desloguear/">Desloguearse</a>
+</body>
+</html>

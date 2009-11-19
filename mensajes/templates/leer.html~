@@ -1,0 +1,28 @@
+<html>
+<body>
+<h1>Leer Mensaje</h1><br>
+<table>
+<tr>
+<td>
+De:
+</td>
+<td>
+<input type="text" name="de" value={{de}} readonly>
+</td>
+</tr>
+<tr>
+<td>
+Mensaje:
+</td>
+<td>
+<textarea name="mensaje" cols="80" rows="20" readonly>{{mens}}</textarea>
+</td>
+<tr>
+</table>
+<form method="POST" action="/mensajes/responder/">
+<input type="hidden" name="id" value="{{id}}">
+<input type="submit" value="Responder">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+<body>
+{{usuario}} <a href="/desloguear/">desloguear</a>
+<h1>Mensajes</h1><br>
+<table>
+	<tr>
+	<td>
+		<table>
+		<tr>
+		<td>
+		<a href="crear/">Crear</a>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="enviados/">Enviados<a>
+		</td>
+		</tr>
+		</table>
+	</td>
+	<td>
+		<table>
+		<tr>
+		<td>
+		Estado
+		</td>
+		<td>
+		De
+		</td>
+		<td>
+		Mensaje
+		</td>
+		</tr>
+		{%if mensajes%}
+		{% for mens in mensajes%}
+		<tr>
+		<td>
+		{{mens.0}}
+		</td>
+		<td>
+		{{mens.1}}
+		</td>
+		<td>
+		<a href="leer/{{mens.3}}/">{{mens.2}}</a>
+		</td>
+		</tr>
+		{% endfor %}
+		{%endif%}
+		</table>
+	</td>	
+	</tr>
+</table>
+</body>
+</html>
