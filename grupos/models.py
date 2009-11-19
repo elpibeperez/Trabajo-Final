@@ -1,4 +1,5 @@
 from django.db import models
+from settings import DIRECTORIO_BASE
 # Create your models here.
 
 class Marco(models.Model):
@@ -21,8 +22,8 @@ EXT_CHOICES = (
 
 class Imagenes(models.Model):
     nombre = models.CharField(max_length=100)
-    imagen = models.FileField(max_length=200)
-    meta = models.FileField(max_length=200)
+    imagen = models.FileField(upload_to=DIRECTORIO_BASE+"imagenes/",max_length=200,)
+    meta = models.FileField(upload_to=DIRECTORIO_BASE+"imagenes/",max_length=200)
     tipo = models.CharField(max_length=1, choices=EXT_CHOICES)
 
 class ImagenesGrupo(models.Model):
@@ -36,8 +37,8 @@ ROL_USUARIO_CHOICES = (
 
 class Invitaciones(models.Model):
     grupo = models.ForeignKey(Grupo)
-    invitado = models.ForeignKey('auth.User')
-    anfitrion = models.ForeignKey('auth.User')
+    invitado = models.ForeignKey('auth.User', related_name="invitado")
+    anfitrion = models.ForeignKey('auth.User', related_name="anfitrion")
     rol = models.CharField(max_length=1, choices=ROL_USUARIO_CHOICES)
 
 class Colaboracion(models.Model):
@@ -51,7 +52,7 @@ class Datos(models.Model):
     y = models.FloatField()
     cant = models.FloatField()
     comentario = models.CharField(max_length=100)
-    imagen = models.FileField(max_length=200)
+    imagen = models.FileField(upload_to=DIRECTORIO_BASE+"imagenes/",max_length=200)
 
 BOOLEAN_CHOICES = (
     ('T', 'True'),
@@ -70,7 +71,7 @@ class Configuracion(models.Model):
 
 class ConfiguracionImagen(models.Model):
     config = models.ForeignKey(Configuracion)
-    imagen = models.FileField(max_length=200)
+    imagen = models.ForeignKey(Imagenes)
     level = models.IntegerField()
     marco = models.ForeignKey(Marco)
 
