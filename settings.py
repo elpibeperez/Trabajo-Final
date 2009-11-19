@@ -88,5 +88,6 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'sistema.mensajes',
+    'sistema.grupos',
 )
 
