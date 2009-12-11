@@ -1,0 +1,38 @@
+<html>
+<body>
+{{}}
+<table>
+<tr>
+<td>
+Crear un grupo de investigaci&oacute;n de una regi&oacute;n de:
+<ul>
+<li><a href="argentina/">Argentina</a></li>
+<li><a href="cordoba/">C&oacute;rdoba</a></li>
+</ul>
+</td>
+{%if grupos%}
+<td>
+<table>
+<tr>
+<td>
+Grupos:
+</td>
+<td>
+Rol:
+</td>
+</tr>
+{%for gr in grupos%}
+<tr>
+<td><a href="{{gr.2}}">{{gr.0}}</a>
+</td>
+<td>{{gr.1}}
+</td>
+</tr>
+{%endfor%}
+<table>
+</td>
+{%endif%}
+</tr>
+</table>
+</body>
+</html>

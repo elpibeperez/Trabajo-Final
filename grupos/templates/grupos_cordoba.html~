@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Crear Grupo de Investigaci&oacute;n sobre fen&oacute;meno localizado en la Provincia de C&oacute;rdoba </title>
+<link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+
+   <!-- Begin Wrapper -->
+   <div id="wrapper">
+   
+         <!-- Begin Header -->
+        <div id="header">
+	Crear Grupo de Investigaci&oacute;n sobre fen&oacute;meno localizado en la Provincia de C&oacute;rdoba
+	</div>
+	<!-- End Header -->
+		 
+	<!-- Begin Content Column -->
+	<div id="content">
+	{mapa de cordoba}	       
+	
+		 
+	</div>
+	<!-- End Content Column -->
+		 
+	<!-- Begin Right Column -->
+	<div id="rightcolumn">
+	Tema:<br/>
+	<input type="text" name="tema"><br/>
+	Objetivos:<br/>
+	<textarea name="objetivos"></textarea><br/>
+	min x:<br/>
+	<input type="text" name="minx"><br/>
+	min y:<br/>
+	<input type="text" name="miny"><br/>
+	max x:<br/>
+	<input type="text" name="maxx"><br/>
+	max y:<br/>
+	<input type="text" name="maxy"><br/>
+	<input type="submit" name="crear" value="crear"><br/>
+	
+		 
+	</div>
+	<!-- End Right Column -->
+		 
+	<!-- Begin Footer -->
+	<div id="footer">
+		       
+	This is the Footer		
+			    
+	</div>
+	<!-- End Footer -->
+		 
+   	</div>
+   	<!-- End Wrapper -->
+   
+</body>
+</html>

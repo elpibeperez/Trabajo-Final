@@ -42,7 +42,7 @@ USE_I18N = True
 
 # Absolute path to the directory that holds media.
 # Example: "/home/media/media.lawrence.com/"
-MEDIA_ROOT = ''
+MEDIA_ROOT = DIRECTORIO_BASE+"media/"
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
@@ -79,6 +79,7 @@ TEMPLATE_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
     DIRECTORIO_BASE+'mensajes/templates',
     DIRECTORIO_BASE+'templates',
+    DIRECTORIO_BASE+'grupos/templates',
 )
 
 INSTALLED_APPS = (
